@@ -1,0 +1,2 @@
+Punto 2f
+    No puedo ver el archivo, porque se encuentra en una rama del projecto, la cual no fue actualizada a la rama main
