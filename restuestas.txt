@@ -1,2 +1,4 @@
 Punto 2f
     No puedo ver el archivo, porque se encuentra en una rama del projecto, la cual no fue actualizada a la rama main
+
+    Luego de realizar el merge de la rama segundaria a la main, el archivo tp2_1_2.c aparede nuevamente y las ramas en el grafo se conectan.
