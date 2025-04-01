@@ -12,6 +12,7 @@ struct
 
 void listarPCs(compu pcs[], int cantidad);
 void mostrarMasVieja(compu pcs[], int cantidad);
+void mostrarMasVeloz( compu pcs[], int cantidad); 
 
 int main (){
     srand(time(NULL));
@@ -26,6 +27,18 @@ int main (){
         indice = rand() % 6;
         PC[i].tipo_cpu = tipos[indice];
     }
-    printf("%s",PC[3].tipo_cpu);
+    listarPCs(PC,5);
     return 0;
+}
+
+
+void listarPCs(compu pcs[], int cantidad){
+    for(int i = 0; i < cantidad; i++){
+        printf("Caracteristicas de la PC %d:",i + 1);
+        printf("\n Velocidad: %d",pcs[i].velocidad);
+        printf("\n anio: %d",pcs[i].anio);
+        printf("\n cantidad de nucleos: %d",pcs[i].cantidad_nucleos);
+        printf("\n Tipo de cpu: %s",pcs[i].tipo_cpu);
+        printf("\n");
+    }
 }
